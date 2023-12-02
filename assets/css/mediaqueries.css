@@ -1,0 +1,71 @@
+/* Estilos base */
+
+/* ... */
+
+/* Media Query para Tablets (768px) */
+@media screen and (max-width: 768px) {
+    .hero .titulo {
+        font-size: 60px; /* Ajustar el tamaño del título para tablets */
+        margin-bottom: 20px; /* Espacio adicional en la parte inferior del título */
+    }
+    h2 {
+        font-size: 18px; /* Ajustar el tamaño del subtitulo */
+        padding-bottom: 5px; /* Espaciado inferior adicional para el subtítulo */
+        color: rgba(255, 255, 255, 0.8); /* Cambiar la opacidad del color del subtitulo */
+    }
+    .contenedor-botones {
+        flex-direction: column; /* Apilar botones verticalmente */
+        gap: 15px; /* Espaciado entre botones */
+    }
+    .btn {
+        font-size: 18px; /* Reducir el tamaño de fuente de los botones */
+    }
+    .toast .contenido {
+        grid-template-columns: 25px auto; /* Ajustar el tamaño de la columna para el ícono y el texto */
+        gap: 10px; /* Espaciado entre elementos */
+        padding: 10px; /* Espaciado interno */
+    }
+    .toast .icono {
+        font-size: 25px; /* Ajustar el tamaño del ícono */
+    }
+    .toast .titulo {
+        font-size: 18px; /* Ajustar el tamaño del título de la notificación */
+        margin-bottom: 3px; /* Espaciado inferior adicional para el título */
+    }
+    .contenedor-toast {
+        right: 20px; /* Ajustar posición horizontal */
+        bottom: 20px; /* Ajustar posición vertical */
+        width: 300px; /* Ancho máximo para las notificaciones */
+        max-width: 90%; /* Ajustar el ancho máximo */
+        gap: 10px; /* Espaciado entre notificaciones */
+    }
+}
+
+/* Media Query para Móviles (480px) */
+@media screen and (max-width: 480px) {
+    .hero .titulo {
+        font-size: 40px; /* Reducir más el tamaño del título para móviles */
+        margin-bottom: 10px; /* Espacio adicional en la parte inferior del título */
+    }
+    h2 {
+        font-size: 16px; /* Reducir el tamaño del subtitulo */
+        padding-bottom: 3px; /* Espaciado inferior adicional para el subtítulo */
+        color: rgba(255, 255, 255, 0.6); /* Cambiar la opacidad del color del subtitulo */
+    }
+    .contenedor-botones {
+        gap: 10px; /* Espaciado entre botones */
+    }
+    .btn {
+        font-size: 16px; /* Reducir el tamaño de fuente de los botones */
+    }
+    .toast .contenido {
+        display: hidden;
+        grid-template-columns: 20px auto; /* Ajustar el tamaño de la columna para el ícono y el texto */
+        gap: 8px; /* Espaciado entre elementos */
+        padding: 8px; /* Espaciado interno */
+    }
+    .toast .icono {
+        font-size: 20px; /* Ajustar el tamaño del ícono */
+    }
+    
+}
